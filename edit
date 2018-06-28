@@ -1,0 +1,45 @@
+#
+# program to decide what/where to eat for lunch
+#
+import time
+import datetime
+
+
+def lunch_time():
+
+    print("Hello and welcome to Skyway Wok!")
+    time.sleep(1)
+    print("Today's date and time: " , datetime.datetime.now())
+    time.sleep(1)
+    print("Here's a list of Today's Menu!")
+    print("Fried Rice, White Rice, Spicy Noodles, Sesame Chicken, Spicy Wings, Stir Fry")
+    mon_menu = ['Fried Rice', 'White Rice', 'Spicy Noodles', 'Sesame Chicken', 'Spicy Wings', 'Stir Fry']
+    order = input('would you like One, Two, or Three entrees?')
+#
+# The User is given a choice of one two or three entrees
+#
+    if str(order) == "one":
+        print('Please Select One Item from the menu:')
+    elif str(order) == "two":
+        print('Please Select Two Items from the menu')
+    elif str(order) == "three":
+        print('Please Select Three Items from the menu')
+
+#
+#  The User inputs their selection
+#
+
+    mon_menu = input('')
+    if str(mon_menu) == "fried Rice":
+        print('One Order of Fried Rice Has Been Entered; Please proceed to Cashier')
+    elif str(mon_menu) == "White Rice":
+        print('One Order of White Rice Has Been Entered; Please proceed to Cashier')
+    elif str(mon_menu) == "Spicy Noodles":
+        print('One Order of Spicy Noodles Has Been Entered; Please proceed to Cashier')
+    elif str(mon_menu) == "Sesame Chicken":
+        print('One Order of Sesame Chicken Has Been Entered; Please proceed to Cashier')
+    else:
+        print("Please Select an item from the list")
+
+
+print(lunch_time())
