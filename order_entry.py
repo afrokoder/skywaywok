@@ -1,5 +1,7 @@
 import time
 import datetime
+from menu import menu
+
 from datetime import date 
 
 #Welcome Screen 
@@ -12,8 +14,8 @@ time.sleep(1)
 
 
 #Display list of available items
-menu = ["bread","toast","eggs","muffins"]
-print ("Todays Menu: ", *menu, sep = "\n")
+#menus = ["bread","toast","eggs","muffins"]
+print ("Todays Menu: ", *menu.keys(), sep = "\n")
 
 #List that holds the items being ordered by the customer 
 ordered = []
@@ -21,7 +23,7 @@ ordered = []
 #defining the order entry process
 
 def entree(): 
-    for item in range(0,5): #allows up to x amount of orders to be placed 
+    for item in range(0,3): #allows up to x amount of orders to be placed 
          
         item = input('enter your item: press q to quit: ') #takes in the customers order or Q to quit
         item = item.lower()
